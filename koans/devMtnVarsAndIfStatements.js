@@ -1,6 +1,7 @@
 describe("About variables and If Statments", function() {
   it("should create a variable called myFirstVariable and set it equal to 1", function() {
     //code goes here.
+    var myFirstVariable = 1
     expect(myFirstVariable).toBe(1);
   });
 
@@ -18,7 +19,7 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('C');
   });
 
   it("should understand equality operators", function () {
@@ -35,9 +36,10 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('B');
 
-    //explain your answer here.
+    //Double equal doesn't care if it's a string or an integer (int).  The function runs top to bottom, so since it finds a match in B, it doesn't care that C is also a match.
+
   });
 
   it("should understand equality operators, again", function () {
@@ -54,23 +56,23 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('C');
 
-    //explain your answer here.
+    //Single = is an assignment operator and will always equate to true in an if statement (assuming it is a non negative value).
   });
 
   it('should understand adding strings', function(){
     var num = '3';
-    expect(num + 8).toBe(FILL_ME_IN);
+    expect(num + 8).toBe('38');
 
-    //explain your answer here.
+    //'3' is a string, but 8 is a number. Anytime you add a string to anything, JS assumes you want a string back. So adding '3' to 8 is going to return the string '38'
   });
 
   it('should understand adding strings, again', function(){
     var num = '1';
-    expect(num + FILL_ME_IN).toBe('18');
+    expect(num + 8).toBe('18');
 
-    //explain your answer here.
+    //Same explanation as above.
   });
 });
 

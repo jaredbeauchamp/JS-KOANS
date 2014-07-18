@@ -1,11 +1,11 @@
 describe('About Truthy and Falsy', function(){
   it('should create a variable called theTruth and make it truthy', function(){
-
+    var theTruth = true
     expect(theTruth).toBeTruthy();
   });
 
   it('should create a variable called theAntiTruth and make it be Falsy', function(){
-
+    var theAntiTruth = false
     expect(theAntiTruth).toBeFalsy();
   });
 
